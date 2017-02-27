@@ -19,14 +19,14 @@
 	<!-- bootstrap the app with your module -->
 	<h1 ng-init="titolo='Esercizio sulle expressions'" ng-bind="titolo"></h1>
 	<h2 ng-init="titolo2='Operazioni numeriche'" ng-bind="titolo2"></h2>
-	<p>3+7 = </p>
+	<p>3+7 = {{3+7}} </p>
 	<h2 ng-init="titolo3='Operazioni sulle stringhe'" ng-bind="titolo3"></h2>
-	<p>Jhon + Titor = </p>
+	<p>Jhon + Titor = {{"Jhon" + "Titor"}}</p>
 	<h2 ng-init="titolo4='Interpolazioni'" ng-bind="titolo4"></h2>
 	<div ng-init="user={nome:'giovanni',cognome:'rossi',eta:27}">
-		<p>il mio nome è</p>
-		<p>il mio cognome è</p>
-		<p>la mia età è</p>
+		<p>il mio nome è {{user.nome}}</p>
+		<p>il mio cognome è {{user.cognome}}</p>
+		<p>la mia età è {{user.eta}}</p>
 	</div>
 	<!-- install angular and load -->
 	<script src="node_modules/angular/angular.min.js"></script>
