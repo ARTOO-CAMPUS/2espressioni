@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<base href="/">
+	<meta name="fragment" content="!">
+	<meta name="description" content="Espressioni">
+	<meta name="author" content="ArtooCampus">
+	<meta name="application-name" content="Artoo Campus">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<title>Artoo Campus - Espressioni</title>
+	<!-- install bootstrap.css and load it -->
+</head>
+
+<body ng-app="app">
+	<!-- bootstrap the app with your module -->
+	<h1 ng-init="titolo='Esercizio sulle expressions'" ng-bind="titolo"></h1>
+	<h2 ng-init="titolo2='Operazioni numeriche'" ng-bind="titolo2"></h2>
+	<p>3+7 = </p>
+	<h2 ng-init="titolo3='Operazioni sulle stringhe'" ng-bind="titolo3"></h2>
+	<p>Jhon + Titor = </p>
+	<h2 ng-init="titolo4='Interpolazioni'" ng-bind="titolo4"></h2>
+	<div ng-init="user={nome:'giovanni',cognome:'rossi',eta:27}">
+		<p>il mio nome è</p>
+		<p>il mio cognome è</p>
+		<p>la mia età è</p>
+	</div>
+	<!-- install angular and load -->
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
